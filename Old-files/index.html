@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        header{
+            background-color: darkcyan;
+            text-align: center;
+            justify-content: center;
+            padding: items;
+            border-radius: 40px;
+            border: 350px solid darkcyan;
+        }
+        header .h1{
+            text-align: center;
+            color:white;
+            justify-content: center;
+        }
+        .button{
+            text-align: center;
+            border-radius: 20px;
+            background-color: azure;
+            color:black
+        }
+        #about{
+            text-align: center;
+            background-color: rgb(69, 177, 177);
+            border:2px solid black;
+            border-radius: 20px;
+            justify-content: center;
+        }
+        #about h1:hover{
+            transform: scale(1.05);
+            color: blueviolet;
+        }
+        #skills{
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(69, 177, 177);
+            border:2px solid black;
+            border-radius: 20px;
+            height: 700px;
+            padding: items;
+        }
+        #skills h1{
+            color: rgb(210, 25, 56) ;
+        }
+        #projects{
+            text-align: center;
+            background-color: rgb(69, 177, 177);
+            border:2px solid black;
+            border-radius: 20px;
+            height: 700px;
+        }
+        #contact{
+            text-align: center;
+            background-color: rgb(69, 177, 177);
+            border:2px solid black;
+            border-radius: 20px;
+            height: 700px;
+            justify-content: center;
+            padding: items;
+        }
+        footer{
+            border:2px solid black;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        .img{
+            border-radius: 125px;
+            height: 500px;
+            background-color:crimson;
+        }
+        .img:hover{
+            transform: scale(1.05);
+            border-color: crimson;
+        }
+        .table{
+            border-width: 3px;
+            color:black;
+            border-color: white;
+            text-align: center;
+        }
+        .social{
+            text-align: center;
+            height: 100px;
+            background-color: black;
+            color:crimson;
+            gap:40px;
+        }
+        .social-items:hover{
+            color:darksalmon;
+        }
+        .top{
+            margin-top: 0px;
+            margin-left: 1450px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+     <header class="header">
+    <h1 class="h1">WELCOME TO MY PORTFOLIO </h1>
+    <a href="#about">
+        <button class="button">
+            About
+        </button>
+    </a>
+    <a href="#skills">
+        <button class="button">
+            Skills
+        </button>
+    </a>
+    <a href="#projects">
+        <button class="button">
+            Projects
+        </button>
+    </a>
+    <a href="#contact">
+        <button class="button">
+            Contact
+        </button>
+    </a>
+     </header>
+
+     <main>
+         <section id="about">
+            <h1 style="color: red;">
+                KUSUMA SRAVYA
+            </h1>
+            <img  class="img" src="myimg.jpg" alt="it is my photo">
+            <p style="font-size: large;">
+                I am persuing B Tech 1st year in <i>vignan university</i>
+              <br>
+                I am passinate to be web developer with my hard work 
+              <br>
+                i am learning about web development from Code With Swaroop
+              <br>
+                you can <strong>click here</strong> to check out what i am going to learn in HTML,CSS.JS. 
+            </p>
+         </section>
+
+         <section id="skills">
+            <h1>
+                MY SKILLS
+            </h1>
+            <ul style="text-align: center;">
+                <li>python basics</li>
+                <li>HTML basics</li>
+                <li>CSS basics</li>
+                <li>Javascript basics</li>
+            </ul>
+         </section>
+
+         <section id="projects">
+            <h1>MY PROJECTS</h1>
+            <table  class="table" boder="3" style="border-color: black;">
+                 <tr>
+                    <th>project</th>
+                    <th>description</th>
+                 </tr>
+                 <tr>
+                    <td>protfolio website</td>
+                    <td>I have build a protfolio website by using HTML,CSS,Java script</td>
+                 </tr>
+                 <tr>
+                    <td>python simple website on restarent</td>
+                    <td>I have build a simple wedsite in the course by mentiby platform</td>
+                 </tr>
+        
+            </table>
+         </section>
+
+         <section id="contact">
+            <h1>
+                CONTACT ME
+            </h1>
+            <p>
+                fell free to get in touch with me using the form below :
+            </p>
+            <form>
+                <lable for="name">Name</lable>
+                <input type="text" id="name" name="name">
+                <br>
+        
+                <lable for="Email">Email</lable>
+                <input type="Email" id="Email" name="Email">
+                <br>
+        
+                <b>Choose Your Gender</b>
+                <input type="radio" id="male" name="male">
+                <lable for="male">Male</lable>
+               
+                <input type="radio" id="female" name="female">
+                <lable for="female">Female</lable>
+                <br>
+        
+                <b>select your intersts</b>
+        
+                <input type="checkbox" id="" name="coding">
+                <lable for="coding">Coding</lable>
+               
+                <input type="checkbox" id="reading" name="reading">
+                <lable for="reading">Reading</lable>
+                <br>
+        
+                <lable for="bio">biography(upto 200 characters):</lable>
+                <input type="text" id="bio">
+                <br>
+        
+                <button type="submit">submit</button>
+                
+            </form>
+         </section>
+
+     </main>
+
+     <footer>
+          <p>@ 2025 MY PROTFOLIO</p>
+          <div class="social">
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/vempa-kusuma-sravya-86b26133a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://youtu.be/lGKGDxwvrEQ?si=x3YRo6P3ge8SW4qy"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+     </footer>
+     <a href="#header">
+        <button class="top">
+            Top
+        </button>
+    </a>   
+</body>
+</html>
